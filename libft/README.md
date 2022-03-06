@@ -2,12 +2,12 @@
 My very first own library.
 
 ## Part 1
-- [ ] ft_isalpha
-- [ ] ft_isdigit
-- [ ] ft_isalnum
-- [ ] ft_isascii
-- [ ] ft_isprint
-- [ ] ft_strlen
+- [x] ft_isalpha
+- [x] ft_isdigit
+- [x] ft_isalnum
+- [x] ft_isascii
+- [x] ft_isprint
+- [x] ft_strlen
 - [ ] ft_memset
 - [ ] ft_bzero
 - [ ] ft_memcpy
