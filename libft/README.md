@@ -9,7 +9,7 @@ My very first own library.
 - [x] ft_isprint
 - [x] ft_strlen
 - [ ] ft_memset
-- [ ] ft_bzero
+- [x] ft_bzero
 - [ ] ft_memcpy
 - [ ] ft_memmove
 - [ ] ft_strlcpy
