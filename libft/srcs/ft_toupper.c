@@ -6,11 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 01:47:36 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 01:47:57 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 01:50:32 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_toupper(char c)
+int	ft_toupper(int c)
 {
 	if ('a' <= c && c <= 'z')
 		return (c + 'A' - 'a');
