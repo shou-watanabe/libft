@@ -6,14 +6,14 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 02:19:59 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 02:23:23 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 02:25:32 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	char	str;
+	char	*str;
 
 	str = (char *)s;
 	i = 0;
