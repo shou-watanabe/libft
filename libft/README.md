@@ -15,7 +15,7 @@ My very first own library.
 - [ ] ft_strlcpy
 - [ ] ft_strlcat
 - [ ] ft_toupper
-- [ ] ft_tolower
+- [x] ft_tolower
 - [ ] ft_strchr
 - [ ] ft_strrchr
 - [ ] ft_strncmp
