@@ -14,7 +14,7 @@ My very first own library.
 - [ ] ft_memmove
 - [ ] ft_strlcpy
 - [ ] ft_strlcat
-- [ ] ft_toupper
+- [x] ft_toupper
 - [x] ft_tolower
 - [ ] ft_strchr
 - [ ] ft_strrchr
