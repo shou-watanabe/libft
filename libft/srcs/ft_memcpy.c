@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 15:10:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 16:22:33 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 16:26:32 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*dstc;
 	unsigned char	*srcc;
