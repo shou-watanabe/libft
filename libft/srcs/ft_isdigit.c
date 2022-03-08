@@ -6,11 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:58:19 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/06 02:30:56 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 09:47:18 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	return ('0' <= c && c <= '9');
 }

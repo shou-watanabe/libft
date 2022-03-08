@@ -6,11 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 02:37:59 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/06 02:38:55 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 09:47:13 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	return (' ' <= c && c <= '~');
 }

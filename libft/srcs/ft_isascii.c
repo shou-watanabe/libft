@@ -6,11 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 02:36:14 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/06 02:36:41 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 09:45:08 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	return (0 <= c && c <= 127);
 }
