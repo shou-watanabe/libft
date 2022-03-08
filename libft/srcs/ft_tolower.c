@@ -6,9 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 01:39:54 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 01:50:22 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 09:51:15 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

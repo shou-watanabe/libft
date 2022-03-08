@@ -6,9 +6,11 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 02:19:59 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 02:25:32 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/08 09:50:37 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
