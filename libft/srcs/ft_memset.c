@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 11:11:16 by shwatana         ###   ########.fr       */
+/*   Created: 2022/03/08 10:45:02 by shwatana          #+#    #+#             */
+/*   Updated: 2022/03/08 11:05:18 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+void	*memset(void *buf, int c, size_t size)
+{
+	unsigned char	*bufc;
+	size_t			i;
 
-void	ft_bzero(void *s, size_t n);
-void	*ft_calloc(size_t num, size_t size);
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-void	*memset(void *buf, int c, size_t size);
-size_t	ft_strlen(const char *s);
-int		ft_tolower(int c);
-int		ft_toupper(int c);
-
-#endif
+	bufc = (unsigned char *)buf;
+	i = 0;
+	while (i < size)
+	{
+		bufc[i] = c;
+		i++;
+	}
+	return (bufc);
+}
