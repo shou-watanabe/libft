@@ -6,13 +6,14 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/11 23:50:53 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/12 00:07:57 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <unistd.h>
 # include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
@@ -28,6 +29,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *buf, int c, size_t size);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *str, int fd);
+void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *str, int fd);
 size_t	ft_strlen(const char *s);
 int		ft_tolower(int c);
