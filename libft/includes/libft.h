@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/16 18:07:12 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/16 23:29:51 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdbool.h>
+// のちに削除
+# include <stdio.h>
+# include <string.h>
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t num, size_t size);
