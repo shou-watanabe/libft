@@ -13,7 +13,7 @@ My very first own library.
 - [x] ft_memcpy
 - [x] ft_memmove
 - [x] ft_strlcpy
-- [ ] ft_strlcat
+- [x] ft_strlcat
 - [x] ft_toupper
 - [x] ft_tolower
 - [ ] ft_strchr
