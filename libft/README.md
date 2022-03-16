@@ -21,7 +21,7 @@ My very first own library.
 - [x] ft_strncmp
 - [x] ft_memchr
 - [x] ft_memcmp
-- [ ] ft_strnstr
+- [x] ft_strnstr
 - [ ] ft_atoi
 - [ ] ft_calloc
 - [ ] ft_strdup
