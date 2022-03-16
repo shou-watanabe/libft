@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/16 17:35:41 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/16 18:07:12 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strchr(const char *str, int c);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+char	*ft_strrchr(const char *str, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
