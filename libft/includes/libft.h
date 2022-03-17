@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 09:40:17 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/17 10:13:48 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t size);
 char	*ft_strnstr(const char *str, const char *target, size_t size);
 char	*ft_strrchr(const char *str, int c);
+char	*ft_substr(const char *str, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
