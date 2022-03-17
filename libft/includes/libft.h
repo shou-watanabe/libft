@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 10:13:48 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/17 10:20:59 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *str, int fd);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *str);
+char	*ft_strjoin(const char *s1, const char *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
