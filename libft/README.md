@@ -31,7 +31,7 @@ My very first own library.
 - [x] ft_strjoin
 - [x] ft_strtrim
 - [x] ft_split
-- [ ] ft_itoa
+- [x] ft_itoa
 - [ ] ft_strmapi
 - [ ] ft_striteri
 - [x] ft_putchar_fd
