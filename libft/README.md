@@ -30,7 +30,7 @@ My very first own library.
 - [x] ft_substr
 - [x] ft_strjoin
 - [x] ft_strtrim
-- [ ] ft_split
+- [x] ft_split
 - [ ] ft_itoa
 - [ ] ft_strmapi
 - [ ] ft_striteri
