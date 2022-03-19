@@ -40,7 +40,7 @@ My very first own library.
 - [x] ft_putnbr_fd
 
 ## Bonus part
-- [ ] ft_lstnew
+- [x] ft_lstnew
 - [ ] ft_lstadd_front
 - [ ] ft_lstsize
 - [ ] ft_lstlast
