@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/19 23:51:27 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/20 12:07:12 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
 void	ft_striteri(char *s, void (*f)(size_t, char *));
+t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstnew(void *content);
 void	*memchr(const void *buf, int c, size_t n);
 int		memcmp(const void *s1, const void *s2, size_t size);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
