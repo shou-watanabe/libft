@@ -46,7 +46,7 @@ My very first own library.
 - [x] ft_lstlast
 - [x] ft_lstadd_back
 - [x] ft_lstdelone
-- [ ] ft_lstclear
+- [x] ft_lstclear
 - [ ] ft_lstiter
 - [ ] ft_lstmap
 
