@@ -41,7 +41,7 @@ My very first own library.
 
 ## Bonus part
 - [x] ft_lstnew
-- [ ] ft_lstadd_front
+- [x] ft_lstadd_front
 - [ ] ft_lstsize
 - [x] ft_lstlast
 - [x] ft_lstadd_back
