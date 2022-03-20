@@ -48,7 +48,7 @@ My very first own library.
 - [x] ft_lstdelone
 - [x] ft_lstclear
 - [x] ft_lstiter
-- [ ] ft_lstmap
+- [x] ft_lstmap
 
 # libft
 C言語の標準関数+αを自作する課題です。
