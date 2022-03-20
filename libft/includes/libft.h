@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 14:46:04 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/20 14:50:37 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
 void	*memchr(const void *buf, int c, size_t n);
 int		memcmp(const void *s1, const void *s2, size_t size);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
