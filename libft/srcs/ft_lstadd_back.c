@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 23:48:11 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 12:20:10 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/20 14:41:10 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*lst_last;
+
 	if (lst == NULL || new == NULL)
 		return ;
 	if (*lst == NULL)
