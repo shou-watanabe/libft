@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:43:01 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 14:50:57 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/20 16:41:53 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_lstsize(t_list *lst)
 	size = 0;
 	if (lst == NULL)
 		return (0);
-	while (lst->content != NULL)
+	while (lst != NULL)
 	{
 		size++;
 		lst = lst->next;
