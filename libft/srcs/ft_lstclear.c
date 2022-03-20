@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:58:32 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 15:14:13 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/20 17:51:21 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(*void))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*c_lst;
 	t_list	*next_lst;
