@@ -64,8 +64,6 @@ C言語の標準関数+αを自作する課題です。
   - `char *ft_itoa(int n)`                     : 引数の整数nを文字列に変換する関数
   - `void *memcpy(void *dst, const void *src, size_t n)`
                                                : srcからdstへnバイト分コピーする関数
-  - `void *ft_memccpy(void *dst, void *src, int c, size_t n)`
-                                               : srcからdstへ文字cが見つかるまで最長nバイト分コピーする関数
   - `void *memchr(const void *buf, int c, size_t n)`
                                                : bufに対し文字cを含むか否か最大nバイト分捜索する関数
   - `int memcmp(const void *s1, const void *s2, size_t size)`
