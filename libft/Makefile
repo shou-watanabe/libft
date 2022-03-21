@@ -29,9 +29,7 @@ ARFLAGS	:= rc
 all: $(LIBDIR) $(OBJDIR) $(NAME)
 
 debug:
-	gcc -Wall -Wextra -Werror -MMD -MP -c srcs/*.c -I includes
-	rm ft_*.o
-	rm ft_*.d
+	gcc -Wall -Wextra -Werror srcs/*.c -I includes -L lib -lft
 
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
