@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 18:32:10 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/03/21 23:08:29 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,16 +89,16 @@ char	**ft_split(const char *str, char c)
 	return (store_sp_str(sp_strs, str, c, 0));
 }
 
-int	main(void)
-{
-	const char	*str = "aaa bbbb cccc";
-	char		**splitted_words;
+// int	main(void)
+// {
+// 	const char	*str = "aaa bbbb cccc";
+// 	char		**splitted_words;
 
-	splitted_words = ft_split(str, ' ');
-	while (*splitted_words != NULL)
-	{
-		printf("%s\n", *splitted_words);
-		splitted_words++;
-	}
-	return (0);
-}
+// 	splitted_words = ft_split(str, ' ');
+// 	while (*splitted_words != NULL)
+// 	{
+// 		printf("%s\n", *splitted_words);
+// 		splitted_words++;
+// 	}
+// 	return (0);
+// }
