@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/21 23:08:29 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 11:46:42 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,18 @@ static void	free_all(char	**arr)
 	free(arr);
 }
 
-static char	**last_word_split(char **sp_strs, char const *str, int i, int len)
+static char	**last_word_split(char **ss, char const *str, size_t i, size_t len)
 {
-	sp_strs[i] = ft_substr(str - len, 0, len);
-	if (sp_strs[i] == NULL)
-		free_all(sp_strs);
-	sp_strs[i + 1] = NULL;
-	return (sp_strs);
+	ss[i] = ft_substr((str - len), 0, len);
+	if (ss[i] == NULL)
+		free_all(ss);
+	ss[i + 1] = NULL;
+	return (ss);
 }
 
-static char	**store_sp_str(char **sp_strs, const char *str, char c, int len)
+static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 {
-	int	word_cnt;
+	size_t	word_cnt;
 
 	word_cnt = 0;
 	while (*str)
@@ -61,44 +61,38 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, int len)
 	return (sp_strs);
 }
 
-char	**ft_split(const char *str, char c)
+static void	count_word(const char *str, char c, size_t *word_cnt, size_t *len)
 {
-	char	**sp_strs;
-	int		word_cnt;
-	int		i;
-	int		len;
+	size_t	i;
 
-	word_cnt = 0;
+	*word_cnt = 0;
 	i = 0;
-	len = 0;
+	*len = 0;
 	while (str[i])
 	{
 		if (str[i] == c)
 		{
 			if (len != 0)
-				word_cnt++;
-			len = 0;
+				(*word_cnt)++;
+			*len = 0;
 		}
 		else
-			len++;
+			(*len)++;
 		i++;
 	}
+}
+
+char	**ft_split(const char *str, char c)
+{
+	char	**sp_strs;
+	size_t	word_cnt;
+	size_t	len;
+
+	if (str == NULL)
+		return (NULL);
+	count_word(str, c, &word_cnt, &len);
 	sp_strs = malloc(sizeof(char *) * (word_cnt + 1 + (len > 0)));
 	if (sp_strs == NULL)
 		return (NULL);
 	return (store_sp_str(sp_strs, str, c, 0));
 }
-
-// int	main(void)
-// {
-// 	const char	*str = "aaa bbbb cccc";
-// 	char		**splitted_words;
-
-// 	splitted_words = ft_split(str, ' ');
-// 	while (*splitted_words != NULL)
-// 	{
-// 		printf("%s\n", *splitted_words);
-// 		splitted_words++;
-// 	}
-// 	return (0);
-// }
