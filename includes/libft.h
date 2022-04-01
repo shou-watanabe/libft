@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 17:50:57 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 08:59:08 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdbool.h>
+# include <limits.h>
 // のちに削除
 # include <stdio.h>
 # include <string.h>
@@ -45,8 +46,8 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
-void	*memchr(const void *buf, int c, size_t n);
-int		memcmp(const void *s1, const void *s2, size_t size);
+void	*ft_memchr(const void *buf, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t size);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t size);
 void	*ft_memset(void *buf, int c, size_t size);

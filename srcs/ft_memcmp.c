@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 00:14:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 00:16:25 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 09:00:27 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	memcmp(const void *s1, const void *s2, size_t size)
+int	ft_memcmp(const void *s1, const void *s2, size_t size)
 {
 	size_t			i;
 	int				diff;

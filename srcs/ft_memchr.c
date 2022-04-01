@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 23:33:30 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 00:11:48 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 08:58:56 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memchr(const void *buf, int c, size_t n)
+void	*ft_memchr(const void *buf, int c, size_t n)
 {
 	char	cchr;
 	char	*find_p;
