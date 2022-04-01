@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 08:59:08 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 21:41:45 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
 typedef struct s_list
 {
 	void			*content;
-	struct s_list	*prev;
 	struct s_list	*next;
 }	t_list;
 
