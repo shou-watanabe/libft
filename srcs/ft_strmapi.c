@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 19:27:46 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 19:39:10 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 09:33:32 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))
 		return (NULL);
 	if (f == NULL)
 		return (ft_strdup(str));
-	new_str = (char *)calloc(ft_strlen(str) + 1, sizeof(char));
+	new_str = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1));
 	if (new_str == NULL)
 		return (NULL);
 	i = 0;
@@ -30,19 +30,6 @@ char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))
 		new_str[i] = f(i, str[i]);
 		i++;
 	}
+	new_str[i] = '\0';
 	return (new_str);
 }
-
-// char f(unsigned int index, char c)
-// {
-// 	if (index % 2 == 0)
-// 		return ('!');
-// 	else
-// 		return (c);
-// }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_strmapi("0123456789", &f));
-// 	return (0);
-// }
