@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 23:33:30 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 09:08:46 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 22:12:46 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	*ft_memchr(const void *buf, int c, size_t n)
 	i = 0;
 	cchr = (char)c;
 	buf_chr = (char *)buf;
-	// if (cchr == '\0')
-	// 	return (NULL);
 	while (i < n)
 	{
 		if (buf_chr[i] == cchr)

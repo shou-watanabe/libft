@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 21:28:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/16 23:32:13 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 22:13:02 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t size)
 	}
 	return (diff);
 }
-
-// int	main(void)
-// {
-// 	printf("[ex01]\n");
-// 	char str[] = "ABC";
-// 	char str1[] = "ABC";
-// 	char str2[] = "ABCD";
-// 	char str3[] = "Z";
-// 	char str4[] = "A0";
-// 	char str5[] = "é";
-// 	char *arr[] = {str1, str2, str3, str4, str5};
-// 	for (int i = 0; i < 5; i++)
-// 	{
-// 		char	*s = arr[i];
-// 		printf("strcnmp(%s, %s, 0)=%d, ft_strncmp(%s, %s, 0)=%d\n", str, s, strncmp(str, s, 0), str, s, ft_strncmp(str, s, 0));
-// 		printf("strcnmp(%s, %s, 0)=%d, ft_strncmp(%s, %s, 0)=%d\n", str, s, strncmp(str, s, 2), str, s, ft_strncmp(str, s, 2));
-// 		printf("strcnmp(%s, %s, 3)=%d, ft_strncmp(%s, %s, 3)=%d\n", str, s, strncmp(str, s, 3), str, s, ft_strncmp(str, s, 3));
-// 	}
-// 	printf("[end]\n\n");
-// }
