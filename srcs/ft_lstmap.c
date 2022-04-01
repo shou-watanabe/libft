@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 15:24:07 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/20 17:47:24 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 22:11:16 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 	t_list	*new_ele;
 
-	if (lst == NULL || f == NULL || del == NULL)
-		return NULL;
+	if (lst == NULL || f == NULL)
+		return (NULL);
 	new_lst = NULL;
 	while (lst != NULL)
 	{
