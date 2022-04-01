@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 18:36:06 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 19:22:13 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/01 14:39:36 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,28 @@ static int	put_rec(long long nbr, char *str, int is_negative)
 	return (index + 1);
 }
 
+static int	calc_mem_size(int n)
+{
+	int			mem_size;
+	long long	num;
+
+	num = (long long)n;
+	mem_size = 1;
+	if (num < 0)
+	{
+		num *= -1;
+		mem_size++;
+	}
+	if (num == 0)
+		return (++mem_size);
+	while (num > 0)
+	{
+		mem_size++;
+		num /= 10;
+	}
+	return (mem_size);
+}
+
 char	*ft_itoa(int n)
 {
 	int			is_negative;
@@ -41,7 +63,7 @@ char	*ft_itoa(int n)
 	char		*s_nbr;
 
 	nbr = (long long)n;
-	s_nbr = (char *)malloc(sizeof(char *) * 40);
+	s_nbr = (char *)malloc(sizeof(char) * calc_mem_size(n));
 	if (s_nbr == NULL)
 		return (NULL);
 	if (n < 0)
@@ -54,10 +76,3 @@ char	*ft_itoa(int n)
 	s_nbr[put_rec(nbr, s_nbr, is_negative)] = '\0';
 	return (s_nbr);
 }
-
-// int	main(void)
-// {
-// 	printf("%s\n", ft_itoa(-2147483648));
-// 	printf("%s\n", ft_itoa(0));
-// 	return (0);
-// }
