@@ -1,4 +1,3 @@
-LIBDIR	:= lib
 SRCDIR	:= srcs
 OBJDIR	:= objs
 FILES	:= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
@@ -21,7 +20,7 @@ OBJS	:= $(addprefix $(OBJDIR)/, $(FILES:.c=.o))
 DEPS	:= $(addprefix $(OBJDIR)/, $(FILES:.c=.d))
 CC		:= cc
 RM		:= rm -rf
-NAME	:= $(LIBDIR)/libft.a
+NAME	:= libft.a
 INCDIR	:= includes
 CFLAGS	:= -Wall -Wextra -Werror -MMD -MP
 ARFLAGS	:= rc
