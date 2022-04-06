@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/26 23:30:34 by kyuki             #+#    #+#             */
-/*   Updated: 2022/04/06 14:58:57 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 16:11:45 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,30 +94,6 @@ int main()
     printf("zisaku  : %s\n", str31);
     printf("library : %s\n", str32);
 
-    // puts("-----------ft_strcat-------------");
-    // char str41[30] = "こんにちは";
-    // char str42[30] = "こんにちは";
-    // char str43[] = "konbanha";
-    // ft_strcat(str41, str43);
-    // strcat(str42, str43);
-    // printf("zisaku  : %s\n", str41);
-    // printf("library : %s\n", str42);
-    // char str44[30] ={'\0'};
-    // char str45[30] ={'\0'};
-    // char str46[] = "konbanhaaaa";
-    // ft_strcat(str44, str46);
-    // strcat(str45, str46);
-    // printf("zisaku  : %s\n", str44);
-    // printf("library : %s\n", str45);
-//    puts("----あえてエラーを出す------");
-//    char str47[30] ="aaaaaaa";
-//    char str48[30] ="aaaaaaa";
-//    char str49 = NULL;
-//    ft_strcat(str47, str49);
-//    strcat(str48, str49);
-//    printf("zisaku  : %s\n", str47);
-//    printf("library : %s\n", str48);
-
     puts("----ft_memchr------");
     char str51[] ="nesugosita!!!";
     char str52[] ="nesugosita!!!";
@@ -189,12 +165,6 @@ int main()
     printf("zisaku  : %s\n", ft_strrchr(a, 'z'));
     printf("library : %s\n", strrchr(a, 'z'));
 
-    // puts("----ft_strstr------");
-    // char str81[] ="nesugosita!!!";
-    // char str82[] ="gosita";
-    // printf("zisaku  : %s\n", ft_strstr(str81, str82));
-    // printf("library : %s\n", strstr(str81, str82));
-
     puts("----ft_strnstr------");
     char str81_0[] ="nesugosita!!!";
     char str81_1[] ="go";
@@ -264,15 +234,6 @@ int main()
     int str122 = ft_strlen("chidoridaisuki");
     printf("library: %d\n", str121);
     printf("zisaku : %d\n", str122);
-
-    // puts("----ft_strcmp------");
-    // char str131[] = "chidoridaisuki";
-    // char str132[] = "chidoridaisuki";
-    // char str133[] = "chidori&nobu&daigo";
-    // printf("library: %d\n", strcmp(str131, str132));
-    // printf("zisaku : %d\n", ft_strcmp(str131, str132));
-    // printf("library: %d\n", strcmp(str131, str133));
-    // printf("zisaku : %d\n", ft_strcmp(str131, str133));
 
     puts("----ft_strncmp------");
     char str141[] = "chidoridaisuki";
