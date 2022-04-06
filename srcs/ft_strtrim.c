@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 10:34:05 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 22:53:05 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 00:30:34 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	len = ft_strlen(s1);
-	printf("%zu\n", len);
 	while (len && ft_strchr(set, s1[len - 1]))
 		len--;
-	printf("%zu\n", len);
 	return (ft_substr(s1, 0, len));
 }
