@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 23:33:30 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 14:00:19 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 14:04:05 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	cchr;
-	char	*schr;
-	size_t	i;
+	unsigned char	cchr;
+	unsigned char	*schr;
+	size_t			i;
 
 	i = 0;
-	cchr = (char)c;
-	schr = (char *)s;
+	cchr = (unsigned char)c;
+	schr = (unsigned char *)s;
 	while (i < n)
 	{
 		if (schr[i] == cchr)
