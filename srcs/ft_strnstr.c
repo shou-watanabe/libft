@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 00:22:39 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 09:36:56 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 17:59:31 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strnstr(const char *str, const char *target, size_t size)
 	size_t	target_len;
 	size_t	i;
 
-	if (str[0] == '\0')
+	if (target[0] == '\0')
+		return ((char *)str);
+	if (size == 0)
 		return (NULL);
 	str_len = ft_strlen(str);
 	target_len = ft_strlen(target);
