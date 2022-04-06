@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:58:32 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 12:58:26 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 13:48:23 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@
  */
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*c_lst;
+	t_list	*clear_target_lst;
 	t_list	*next_lst;
 
 	if (lst == NULL)
 		return ;
-	c_lst = *lst;
-	while (c_lst != NULL)
+	clear_target_lst = *lst;
+	while (clear_target_lst != NULL)
 	{
-		next_lst = c_lst->next;
-		ft_lstdelone(c_lst, del);
-		c_lst = next_lst;
+		next_lst = clear_target_lst->next;
+		ft_lstdelone(clear_target_lst, del);
+		clear_target_lst = next_lst;
 	}
 	*lst = NULL;
 }
