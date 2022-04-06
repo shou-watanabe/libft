@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 11:46:42 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 23:54:18 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static void	count_word(const char *str, char c, size_t *word_cnt, size_t *len)
 	{
 		if (str[i] == c)
 		{
-			if (len != 0)
+			if (*len != 0)
 				(*word_cnt)++;
 			*len = 0;
 		}
