@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 14:00:48 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 14:57:50 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 // のちに削除
 # include <stdio.h>
 # include <string.h>
+# include <ctype.h>
 
 typedef struct s_list
 {
@@ -27,6 +28,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+int		ft_atoi(char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t num, size_t size);
 int		ft_isalnum(int c);
