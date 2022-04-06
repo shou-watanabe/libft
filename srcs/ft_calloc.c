@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 08:22:21 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 09:37:08 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 13:39:43 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t num, size_t size)
 	void	*buf;
 
 	buf = (void *)malloc(size * num);
-	if (buf)
+	if (buf != NULL)
 		ft_bzero(buf, num * size);
 	return (buf);
 }
