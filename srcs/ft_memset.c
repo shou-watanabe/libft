@@ -6,20 +6,20 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 10:45:02 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 16:26:25 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 13:11:34 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *buf, int c, size_t size)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*bufc;
 	size_t			i;
 
-	bufc = (unsigned char *)buf;
+	bufc = (unsigned char *)b;
 	i = 0;
-	while (i < size)
+	while (i < len)
 	{
 		bufc[i] = c;
 		i++;
