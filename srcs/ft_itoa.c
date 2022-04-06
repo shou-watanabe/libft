@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 18:36:06 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 14:39:36 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/06 13:45:34 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static int	calc_mem_size(int n)
 		mem_size++;
 	}
 	if (num == 0)
-		return (++mem_size);
+		return (mem_size + 1);
 	while (num > 0)
 	{
 		mem_size++;
