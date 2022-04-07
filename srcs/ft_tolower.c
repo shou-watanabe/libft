@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 01:39:54 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 09:51:15 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 13:45:19 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,12 @@ int	ft_tolower(int c)
 		return (c + 'a' - 'A');
 	return (c);
 }
+
+// int main(void)
+// {
+// 	puts("----ft_tolower------");
+//     int str113 = tolower('A');
+//     int str114 = ft_tolower('A');
+//     printf("library: %c\n", str113);
+//     printf("zisaku : %c\n", str114);
+// }
