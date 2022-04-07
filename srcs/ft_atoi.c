@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 01:14:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 01:44:24 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 15:05:23 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,4 +89,5 @@ int	ft_atoi(const char *str)
 //     char str99_2[] = "999999999";
 //     printf("zisaku  : %d\n", ft_atoi(str99_2));
 //     printf("library : %d\n", atoi(str99_2));
+// 	return (0);
 // }
