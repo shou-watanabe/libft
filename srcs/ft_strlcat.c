@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 12:12:25 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:25:29 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 17:24:27 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,14 +60,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 		printf("ft_strlcat(dest2, s, 0)		:%lu\n", ft_strlcat(dest2, s, 0));
 // 		printf("(concatenated)dest1      	:%s\n", dest1);
 // 		printf("(concatenated)dest2      	:%s\n\n", dest2);
-
+//
 // 		printf("strlcat(dest1, s, 10)   	:%lu\n", strlcat(dest1, s, 10));
 // 		printf("ft_strlcat(dest2, s, 10)	:%lu\n", ft_strlcat(dest2, s, 10));
 // 		printf("(concatenated)dest1      	:%s\n", dest1);
 // 		printf("(concatenated)dest2      	:%s\n\n", dest2);
-
-// 		printf("strlcat(dest1, s, %lu)   	:%lu\n", sizeof(dest1), strlcat(dest1, s, sizeof(dest1)));
-// 		printf("ft_strlcat(dest2, s, %lu)	:%lu\n", sizeof(dest2), ft_strlcat(dest2, s, sizeof(dest2)));
+//
+//      // norm対策で改行
+// 		printf("strlcat(dest1, s, %lu)   	:%lu\n",
+// 			sizeof(dest1), strlcat(dest1, s, sizeof(dest1)));
+// 		printf("ft_strlcat(dest2, s, %lu)	:%lu\n",
+// 			sizeof(dest2), ft_strlcat(dest2, s, sizeof(dest2)));
 // 		printf("(concatenated)dest1      	:%s\n", dest1);
 // 		printf("(concatenated)dest2      	:%s\n\n", dest2);
 // 	}
