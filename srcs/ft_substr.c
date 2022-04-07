@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 09:41:39 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 18:50:37 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 09:31:12 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(const char *str, unsigned int start, size_t len)
 
 	if (str == NULL)
 		return (NULL);
-	if (start > ft_strlen(str))
+	if (start > ft_strlen(str) || len == 0)
 		return (ft_strdup(""));
 	size = ft_strlen(str + start);
 	if (len < size)
@@ -37,3 +37,9 @@ char	*ft_substr(const char *str, unsigned int start, size_t len)
 	}
 	return (sub);
 }
+
+// int main(void)
+// {
+// 	printf("%s\n", ft_substr("abcdefghij", 2, 0));
+// 	return (0);
+// }
