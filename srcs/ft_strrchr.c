@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:30:45 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 09:31:43 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 13:58:16 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,28 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (find_p);
 }
+
+// int main(void)
+// {
+// 	puts("----ft_strrchr------");
+//     char a[] = "aiueo";
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'a'));
+//     printf("library : %s\n", strrchr(a, 'a'));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'i'));
+//     printf("library : %s\n", strrchr(a, 'i'));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'u'));
+//     printf("library : %s\n", strrchr(a, 'u'));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'e'));
+//     printf("library : %s\n", strrchr(a, 'e'));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'o'));
+//     printf("library : %s\n", strrchr(a, 'o'));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 0));
+//     printf("library : %s\n", strrchr(a, 0));
+//     printf("zisaku  : %p\n", ft_strrchr(a, 0));
+//     printf("library : %p\n", strrchr(a, 0));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 1));
+//     printf("library : %s\n", strrchr(a, 1));
+//     printf("zisaku  : %s\n", ft_strrchr(a, 'z'));
+//     printf("library : %s\n", strrchr(a, 'z'));
+// 	return (0);
+// }
