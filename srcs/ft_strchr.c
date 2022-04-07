@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:30:45 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 09:28:46 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 11:31:11 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,12 @@ char	*ft_strchr(const char *str, int c)
 		return (NULL);
 	return (p);
 }
+
+
+// int main(void)
+// {
+// 	char *str = "aaa\0ccccc\0ddddd";
+// 	printf("%p\n", ft_strchr(str, '\0'));
+// 	printf("%p\n", strchr(str, '\0'));
+// 	printf("%p\n", strchr(str, 'a'));
+// }
