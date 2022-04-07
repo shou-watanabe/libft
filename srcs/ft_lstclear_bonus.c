@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:58:32 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 13:48:23 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 17:17:49 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+// int	main(void)
+// {
+// 	t_list	*new_list;
+
+// 	new_list = NULL;
+// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("Hello")));
+// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("World")));
+// 	ft_lstclear(&new_list, free);
+// 	return (0);
+// }

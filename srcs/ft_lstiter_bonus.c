@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 15:24:33 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 12:41:43 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 17:17:40 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,26 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+
+// void addOne(void * p)
+// {
+// 	++*(int*)p;
+// }
+
+// int main(void)
+// {
+// 	t_list	*new_list;
+
+// 	new_list = NULL;
+// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("0")));
+// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("2")));
+// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("4")));
+// 	ft_lstiter(new_list, addOne);
+// 	while (new_list != NULL)
+// 	{
+// 		printf("%s\n", (char *)new_list->content);
+// 		new_list = new_list->next;
+// 	}
+
+// 	return (0);
+// }
