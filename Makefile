@@ -1,4 +1,4 @@
-FILES	:= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
+FILES	= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 		   ft_isascii.c ft_isprint.c ft_strlen.c \
 		   ft_memset.c ft_bzero.c ft_memcpy.c \
 		   ft_memmove.c ft_strlcpy.c ft_strlcat.c \
@@ -13,24 +13,28 @@ FILES	:= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 		   ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c \
 		   ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
 		   ft_lstmap_bonus.c
-BONUS	:= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
+BONUS	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 		   ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 		   ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
-SRCDIR	:= srcs
-OBJDIR	:= objs
-OBJS	:= $(addprefix $(OBJDIR)/, $(FILES:.c=.o))
-BOBJS	:= $(addprefix $(OBJDIR)/, $(BONUS:.c=.o))
-CC		:= cc
-NAME	:= libft.a
-INCDIR	:= includes
-CFLAGS	:= -Wall -Wextra -Werror
-RM		:= rm -rf
-AR		:= ar rc
+SRCDIR	= srcs
+OBJDIR	= objs
+OBJS	= $(addprefix $(OBJDIR)/, $(FILES:.c=.o))
+BOBJS	= $(addprefix $(OBJDIR)/, $(BONUS:.c=.o))
+CC		= cc
+NAME	= libft.a
+INCDIR	= includes
+CFLAGS	= -Wall -Wextra -Werror
+RM		= rm -rf
+AR		= ar rc
 
 all: $(NAME)
 
-bonus: $(OBJDIR) $(OBJS) $(BOBJS)
-	$(AR) $(NAME) $(OBJS) $(BOBJS)
+ifdef WITH_BONUS
+  OBJS += $(BONUS_OBJS)
+endif
+
+bonus:
+	@make WITH_BONUS=true
 
 $(NAME): $(OBJDIR) $(OBJS)
 	$(AR) $(NAME) $(OBJS)
