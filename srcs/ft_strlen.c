@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 09:48:36 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 09:51:09 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 14:11:19 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
+// int main(void)
+// {
+// 	char *str = "Hello 42!";
+// 	printf("%lu\n", ft_strlen(str));
+// 	printf("%lu\n", strlen(str));
+// }
