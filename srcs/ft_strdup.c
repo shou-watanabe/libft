@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 09:31:31 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/17 10:07:53 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/07 14:26:28 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,11 @@ char	*ft_strdup(const char *str)
 	}
 	return (new_char);
 }
+
+// int main(void)
+// {
+// 	puts("----ft_strdup------");
+//     char str161[] ="radwimps";
+//     printf("zisaku  : %s\n", ft_strdup(str161));
+//     printf("library  : %s\n", strdup(str161));
+// }
