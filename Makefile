@@ -29,7 +29,7 @@ ifdef WITH_BONUS
 endif
 
 bonus:
-	@make WITH_BONUS=true
+	make WITH_BONUS=true
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
