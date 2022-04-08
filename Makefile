@@ -13,10 +13,8 @@ FILES	= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 BONUS	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 		   ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 		   ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
-SRCDIR	= srcs
-OBJDIR	= objs
-OBJS	= $(addprefix $(OBJDIR)/, $(FILES:.c=.o))
-BOBJS	= $(addprefix $(OBJDIR)/, $(BONUS:.c=.o))
+OBJS	= $(FILES:.c=.o)
+BOBJS	= $(BONUS:.c=.o)
 CC		= cc
 NAME	= libft.a
 INCDIR	= includes
@@ -33,17 +31,14 @@ endif
 bonus:
 	@make WITH_BONUS=true
 
-$(NAME): $(OBJDIR) $(OBJS)
+$(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
+%.o: %.c
 	$(CC) $(CFLAGS) -I$(INCDIR) -c $< -o $@
 
-$(OBJDIR):
-	mkdir -p $@
-
 clean:
-	$(RM) $(OBJDIR)
+	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
 	$(RM) $(LIBDIR)
