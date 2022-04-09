@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 12:12:25 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 17:24:27 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/09 14:08:37 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,37 +14,38 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	cnt;
+	size_t	len;
 
 	if (size == 0 || ft_strlen(dst) >= size)
 		return (size + ft_strlen(src));
-	cnt = 0;
-	while (*dst && (cnt < size - 1))
+	len = 0;
+	while (*dst && (len < size - 1))
 	{
 		dst++;
-		cnt++;
+		len++;
 	}
-	while (*src && (cnt < size - 1))
+	while (*src && (len < size - 1))
 	{
 		*dst++ = *src++;
-		cnt++;
+		len++;
 	}
 	*dst = '\0';
 	while (*src++)
-		cnt++;
-	return (cnt);
+		len++;
+	return (len);
 }
 
 // int main(void)
 // {
+// 	printf("%lu\n", strlcat(NULL, NULL, 0));
 // 	puts("----ft_strlcat------");
-//     char str151[10] ="12";
-//     char str152[10] ="12";
-//     char str153[] = "ABCDEFG";
-//     printf("zisaku  : %zu, %s\n", ft_strlcat(str151,str153, 6), str151);
-//     printf("library : %zu, %s\n", strlcat(str152,str153, 6), str152);
-//     printf("zisaku  : %zu, %s\n", ft_strlcat(str151,str153, 1), str151);
-//     printf("library : %zu, %s\n", strlcat(str152,str153, 1), str152);
+// 	char str151[10] ="12";
+// 	char str152[10] ="12";
+// 	char str153[] = "ABCDEFG";
+// 	printf("zisaku  : %zu, %s\n", ft_strlcat(str151,str153, 6), str151);
+// 	printf("library : %zu, %s\n", strlcat(str152,str153, 6), str152);
+// 	printf("zisaku  : %zu, %s\n", ft_strlcat(str151,str153, 1), str151);
+// 	printf("library : %zu, %s\n", strlcat(str152,str153, 1), str152);
 
 // 	printf("---piscine---\n");
 // 	char dest1[20] = "Hello, ";
@@ -60,12 +61,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 		printf("ft_strlcat(dest2, s, 0)		:%lu\n", ft_strlcat(dest2, s, 0));
 // 		printf("(concatenated)dest1      	:%s\n", dest1);
 // 		printf("(concatenated)dest2      	:%s\n\n", dest2);
-//
+
 // 		printf("strlcat(dest1, s, 10)   	:%lu\n", strlcat(dest1, s, 10));
 // 		printf("ft_strlcat(dest2, s, 10)	:%lu\n", ft_strlcat(dest2, s, 10));
 // 		printf("(concatenated)dest1      	:%s\n", dest1);
 // 		printf("(concatenated)dest2      	:%s\n\n", dest2);
-//
+
 //      // norm対策で改行
 // 		printf("strlcat(dest1, s, %lu)   	:%lu\n",
 // 			sizeof(dest1), strlcat(dest1, s, sizeof(dest1)));
