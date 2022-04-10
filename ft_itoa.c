@@ -6,16 +6,16 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 18:36:06 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:57:40 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/10 09:26:17 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	put_rec(long long nbr, char *str, int is_negative)
+static size_t	put_rec(long long nbr, char *str, int is_negative)
 {
-	int	mod;
-	int	index;
+	int		mod;
+	size_t	index;
 
 	if (nbr < 10)
 	{
@@ -34,9 +34,9 @@ static int	put_rec(long long nbr, char *str, int is_negative)
 	return (index + 1);
 }
 
-static int	calc_mem_size(int n)
+static size_t	calc_mem_size(int n)
 {
-	int			mem_size;
+	size_t		mem_size;
 	long long	num;
 
 	num = (long long)n;
