@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 12:12:25 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/09 14:08:37 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/10 10:08:09 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		len++;
 	return (len);
 }
+
+// int main(void)
+// {
+// 	char	dst[6] = "Hello";
+// 	char src[6] = "src";
+// 	char	dst2[6] = "Hello";
+// 	char src2[6] = "src";
+// 	printf("%zu\n", strlcat(dst, src, 5));
+// 	printf("%zu\n", ft_strlcat(dst2, src2, 5));
+// }
 
 // int main(void)
 // {
