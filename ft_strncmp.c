@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 21:28:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:11:42 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/10 10:07:44 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t size)
 	i = 0;
 	s1_p = (unsigned char *)s1;
 	s2_p = (unsigned char *)s2;
-	diff = s1_p[i] - s2_p[i];
+	diff = (int)(s1_p[i] - s2_p[i]);
 	while (diff == 0 && i < size)
 	{
-		diff = s1_p[i] - s2_p[i];
+		diff = (int)(s1_p[i] - s2_p[i]);
 		if (s1_p[i] == '\0' || s2_p[i] == '\0')
 			return (diff);
 		i++;
