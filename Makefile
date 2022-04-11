@@ -41,7 +41,7 @@ clean:
 	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
-	$(RM) $(LIBDIR)
+	$(RM) $(NAME)
 
 re: fclean all
 
