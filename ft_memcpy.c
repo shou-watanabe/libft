@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 15:10:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/03/08 16:26:32 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:12:01 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*srcc;
 	size_t			i;
 
+	if (n == 0)
+		return (dst);
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	dstc = (unsigned char *)dst;
@@ -30,3 +32,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dstc);
 }
+
+// int main(void)
+// {
+// 	char	src[] = "ww";
+// 	char	dst[] = "Hello";
+
+// 	printf("%s\n", (char *)memcpy(dst, NULL, 0));
+// 	printf("%s\n", (char *)ft_memcpy(dst, NULL, 0));
+// }
