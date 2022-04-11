@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 01:51:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 15:46:35 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:59:46 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@
 # include <stdlib.h>
 # include <stdbool.h>
 # include <limits.h>
-// のちに削除
-# include <stdio.h>
-# include <string.h>
-# include <ctype.h>
 
 typedef struct s_list
 {
