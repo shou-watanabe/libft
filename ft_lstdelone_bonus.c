@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:53:09 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 17:17:46 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:49:57 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (lst == NULL)
+	if (lst == NULL || del == NULL)
 		return ;
-	if (del != NULL)
-		del(lst->content);
+	del(lst->content);
 	free(lst);
 }
 
