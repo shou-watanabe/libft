@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 00:14:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/06 14:09:38 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:13:24 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t size)
 	i = 0;
 	s1_p = (unsigned char *)s1;
 	s2_p = (unsigned char *)s2;
-	diff = (int)(s1_p[i] - s2_p[i]);
-	while (diff == 0 && i < size)
+	while (i < size)
 	{
 		diff = (int)(s1_p[i] - s2_p[i]);
+		if (diff != 0)
+			return (diff);
 		i++;
 	}
 	return (diff);
