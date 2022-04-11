@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:30:45 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 13:58:52 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:19:58 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strchr(const char *str, int c)
 
 	len = ft_strlen(str) + 1;
 	p = (char *)ft_memchr((void *)str, c, len);
-	if (p == NULL)
-		return (NULL);
 	return (p);
 }
 
