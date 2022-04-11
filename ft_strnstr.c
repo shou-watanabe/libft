@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 00:22:39 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 13:58:41 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:18:39 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *str, const char *target, size_t size)
 	if (size < target_len)
 		return (NULL);
 	i = 0;
-	while (i <= size - target_len)
+	while (i + target_len <= size)
 	{
 		if (ft_strncmp(str + i, target, target_len) == 0)
 			return ((char *)(str + i));
