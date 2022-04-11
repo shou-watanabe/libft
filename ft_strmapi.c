@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 19:27:46 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/01 09:33:32 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/11 21:47:22 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))
 {
-	char			*new_str;
-	unsigned int	i;
+	char	*new_str;
+	size_t	i;
 
 	if (str == NULL)
 		return (NULL);
@@ -27,7 +27,7 @@ char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))
 	i = 0;
 	while (str[i])
 	{
-		new_str[i] = f(i, str[i]);
+		new_str[i] = f((unsigned int)i, str[i]);
 		i++;
 	}
 	new_str[i] = '\0';
