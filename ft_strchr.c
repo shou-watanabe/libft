@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:30:45 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 01:19:58 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:57:57 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,20 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	char	*p;
+	char	chrc;
+	size_t	i;
 	size_t	len;
 
 	len = ft_strlen(str) + 1;
-	p = (char *)ft_memchr((void *)str, c, len);
-	return (p);
+	i = 0;
+	chrc = (char)c;
+	while (i < len)
+	{
+		if (str[i] == chrc)
+			return ((char *)(str + i));
+		i++;
+	}
+	return (NULL);
 }
 
 // int main(void)
