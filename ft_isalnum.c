@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 02:25:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:59:08 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:22:37 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	bool	is_upper_alpha;
-	bool	is_lower_alpha;
-	bool	is_digit;
-
-	is_upper_alpha = ('A' <= c && c <= 'Z');
-	is_lower_alpha = ('a' <= c && c <= 'z');
-	is_digit = ('0' <= c && c <= '9');
-	return (is_upper_alpha || is_lower_alpha || is_digit);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
 
 // int main()
