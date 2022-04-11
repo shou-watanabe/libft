@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 08:22:21 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/10 09:37:13 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/11 21:42:34 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_calloc(size_t count, size_t size)
 		return (NULL);
 	m_size = count * size;
 	if (m_size == 0)
-		return (NULL);
+		m_size = 1;
 	p = malloc(m_size);
 	if (p == NULL)
 		return (NULL);
