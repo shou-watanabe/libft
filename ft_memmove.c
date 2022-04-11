@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 16:25:34 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 09:32:51 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:43:06 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 {
 	unsigned char	*dst_p;
 	unsigned char	*src_p;
-	size_t			i;
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
@@ -25,14 +24,8 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 	if (dst_p < src_p)
 		ft_memcpy(dst_p, src_p, size);
 	else
-	{
-		i = size - 1;
 		while (size--)
-		{
-			dst_p[i] = src_p[i];
-			i--;
-		}
-	}
+			dst_p[size] = src_p[size];
 	return (dst_p);
 }
 
