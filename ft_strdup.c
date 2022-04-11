@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 09:31:31 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/11 23:25:40 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:28:19 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strdup(const char *str)
 {
-	size_t		i;
 	size_t		len;
 	char		*new_char;
 
@@ -22,13 +21,7 @@ char	*ft_strdup(const char *str)
 	new_char = (char *)malloc(sizeof(char) * (len + 1));
 	if (new_char == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i])
-	{
-		new_char[i] = str[i];
-		i++;
-	}
-	new_char[i] = '\0';
+	ft_memcpy((void *)new_char, (const void *)str, len + 1);
 	return (new_char);
 }
 
