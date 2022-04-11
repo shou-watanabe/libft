@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 10:45:02 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 01:36:22 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:42:29 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		bufc[i] = c;
+		bufc[i] = (unsigned char)c;
 		i++;
 	}
 	return (bufc);
