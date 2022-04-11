@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 12:12:25 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/10 10:08:09 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 01:41:06 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (size == 0 || ft_strlen(dst) >= size)
 		return (size + ft_strlen(src));
 	len = 0;
-	while (*dst && (len < size - 1))
+	while (*dst && (len + 1 < size))
 	{
 		dst++;
 		len++;
 	}
-	while (*src && (len < size - 1))
+	while (*src && (len + 1 < size))
 	{
 		*dst++ = *src++;
 		len++;
