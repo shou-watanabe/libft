@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 16:25:34 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 01:43:06 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 18:00:25 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 	unsigned char	*dst_p;
 	unsigned char	*src_p;
 
+	if (size == 0)
+		return (dst);
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	dst_p = (unsigned char *)dst;
@@ -31,8 +33,9 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 
 // int main(void)
 // {
-//     char str31[] = "abcdefghijklmnopqrstu";
-//     char str32[] = "abcdefghijklmnopqrstu";
+// 	printf("%s\n", (char *)memmove("Hello", NULL, 0));
+// 	char str31[] = "abcdefghijklmnopqrstu";
+// 	char str32[] = "abcdefghijklmnopqrstu";
 //     ft_memmove(str31 + 5, str31, 10);
 //     memmove(str32 + 5, str32, 10);
 //     printf("zisaku  : %s\n", str31);

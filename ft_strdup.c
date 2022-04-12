@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 09:31:31 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 01:28:19 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 10:55:18 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *str)
 	new_char = (char *)malloc(sizeof(char) * (len + 1));
 	if (new_char == NULL)
 		return (NULL);
-	ft_memcpy((void *)new_char, (const void *)str, len + 1);
+	ft_memcpy(new_char, str, len + 1);
 	return (new_char);
 }
 

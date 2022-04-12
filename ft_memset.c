@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 10:45:02 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 01:42:29 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 18:02:44 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	unsigned char	*bufc;
 	size_t			i;
 
+	if (len == 0)
+		return (b);
 	bufc = (unsigned char *)b;
 	i = 0;
 	while (i < len)
@@ -32,7 +34,8 @@ void	*ft_memset(void *b, int c, size_t len)
 // 	puts("-----------ft_memset-------------");
 // 	// crush test
 // 	// ft_memset(NULL, 'a', 10);
-// 	// memset(NULL, 'a', 10);
+// 	memset(NULL, 'a', 10);
+// 	printf("%s\n", memset("aaaa", 0, 1));
 // 	char str01[] = "0123456789";
 // 	char str02[] = "0123456789";
 //     ft_memset(str01 + 2, '*', 5);

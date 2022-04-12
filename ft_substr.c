@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 09:41:39 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 09:31:12 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 10:54:46 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_substr(const char *str, unsigned int start, size_t len)
 	i = 0;
 	while (i < len && str[start])
 	{
-		sub[i] = (char)str[start];
+		sub[i] = str[start];
 		start++;
 		i++;
 	}
