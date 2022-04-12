@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 23:43:23 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:40:44 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 16:32:47 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
-	int	len;
+	size_t	len;
 
 	if (str == NULL)
 		return ;
