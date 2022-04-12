@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 17:48:41 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/13 00:20:31 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,32 +62,34 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 	return (sp_strs);
 }
 
-static void	count_word(const char *str, char c, size_t *word_cnt, size_t *len)
+static void	count_word(const char *str, char c, size_t *word_cnt)
 {
 	size_t	i;
+	bool	is_con;
 
 	*word_cnt = 0;
+	is_con = false;
 	i = 0;
-	*len = 0;
 	while (str[i])
 	{
 		if (str[i] == c)
 		{
-			if (*len != 0)
+			if (!is_con)
 				(*word_cnt)++;
-			*len = 0;
+			is_con = true;
 		}
 		else
-			(*len)++;
+			is_con = false;
 		i++;
 	}
+	if (!is_con)
+		(*word_cnt)++;
 }
 
 char	**ft_split(const char *str, char c)
 {
 	char	**sp_strs;
 	size_t	word_cnt;
-	size_t	len;
 
 	if (str == NULL)
 		return (NULL);
@@ -97,8 +99,8 @@ char	**ft_split(const char *str, char c)
 		sp_strs[0] = NULL;
 		return (sp_strs);
 	}
-	count_word(str, c, &word_cnt, &len);
-	sp_strs = malloc(sizeof(char *) * (word_cnt + 1 + (len > 0)));
+	count_word(str, c, &word_cnt);
+	sp_strs = malloc(sizeof(char *) * (word_cnt + 1));
 	if (sp_strs == NULL)
 		return (NULL);
 	return (store_sp_str(sp_strs, str, c, 0));
