@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/08 11:15:58 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 17:48:41 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	free_all(char	**arr)
+static void	*free_all(char	**arr)
 {
 	size_t	i;
 
@@ -23,13 +23,14 @@ static void	free_all(char	**arr)
 		i++;
 	}
 	free(arr);
+	return (NULL);
 }
 
 static char	**last_word_split(char **ss, char const *str, size_t i, size_t len)
 {
 	ss[i] = ft_substr((str - len), 0, len);
 	if (ss[i] == NULL)
-		free_all(ss);
+		return (free_all(ss));
 	ss[i + 1] = NULL;
 	return (ss);
 }
@@ -47,7 +48,7 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 			{
 				sp_strs[word_cnt] = ft_substr(str - len, 0, len);
 				if (sp_strs[word_cnt++] == NULL)
-					free_all(sp_strs);
+					return (free_all(sp_strs));
 			}
 			len = 0;
 		}
