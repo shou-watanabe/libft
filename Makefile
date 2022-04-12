@@ -33,9 +33,6 @@ bonus:
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
 	$(RM) $(OBJS) $(BOBJS)
 
