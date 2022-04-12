@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 23:55:20 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/07 14:37:59 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/12 11:02:59 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
+	if (n == INT_MIN)
 		ft_putstr_fd("-2147483648", fd);
 	else if (n < 0)
 	{
