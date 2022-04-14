@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/13 00:20:31 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/14 18:33:41 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,24 +65,24 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 static void	count_word(const char *str, char c, size_t *word_cnt)
 {
 	size_t	i;
-	bool	is_con;
+	bool	is_bef_c;
 
 	*word_cnt = 0;
-	is_con = false;
+	is_bef_c = true;
 	i = 0;
 	while (str[i])
 	{
 		if (str[i] == c)
 		{
-			if (!is_con)
+			if (!is_bef_c)
 				(*word_cnt)++;
-			is_con = true;
+			is_bef_c = true;
 		}
 		else
-			is_con = false;
+			is_bef_c = false;
 		i++;
 	}
-	if (!is_con)
+	if (!is_bef_c)
 		(*word_cnt)++;
 }
 
