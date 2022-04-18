@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 12:12:25 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/14 18:49:33 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/18 15:23:54 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;
 
+	if (size == 0)
+		return (ft_strlen(src));
 	dst_len = ft_strlen(dst);
-	if (size == 0 || dst_len >= size)
+	if (dst_len >= size)
 		return (size + ft_strlen(src));
 	dst += dst_len;
 	while (*src && (dst_len + 1 < size))
@@ -37,8 +39,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // 	char src[6] = "src";
 // 	char	dst2[6] = "Hello";
 // 	char src2[6] = "src";
-// 	printf("%zu\n", strlcat(dst, src, 5));
-// 	printf("%zu\n", ft_strlcat(dst2, src2, 5));
+// 	// printf("%zu\n", strlcat(dst, NULL, 0));
+// 	printf("%zu\n", ft_strlcat(dst, NULL, 0));
 // }
 
 // int main(void)
