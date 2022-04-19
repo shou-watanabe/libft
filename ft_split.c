@@ -57,7 +57,7 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 		str++;
 	}
 	sp_strs[word_cnt] = NULL;
-	if ((ft_strlen(str) > 0) || len > 0)
+	if (len > 0)
 		sp_strs = last_word_split(sp_strs, str, word_cnt, len);
 	return (sp_strs);
 }
