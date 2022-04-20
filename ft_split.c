@@ -62,12 +62,13 @@ static char	**store_sp_str(char **sp_strs, const char *str, char c, size_t len)
 	return (sp_strs);
 }
 
-static void	count_word(const char *str, char c, size_t *word_cnt)
+static size_t	count_word(const char *str, char c)
 {
 	size_t	i;
+	size_t	word_cnt;
 	bool	is_bef_c;
 
-	*word_cnt = 0;
+	word_cnt = 0;
 	is_bef_c = true;
 	i = 0;
 	while (str[i])
@@ -75,7 +76,7 @@ static void	count_word(const char *str, char c, size_t *word_cnt)
 		if (str[i] == c)
 		{
 			if (!is_bef_c)
-				(*word_cnt)++;
+				word_cnt++;
 			is_bef_c = true;
 		}
 		else
@@ -83,7 +84,8 @@ static void	count_word(const char *str, char c, size_t *word_cnt)
 		i++;
 	}
 	if (!is_bef_c)
-		(*word_cnt)++;
+		word_cnt++;
+	return (word_cnt);
 }
 
 char	**ft_split(const char *str, char c)
@@ -101,7 +103,7 @@ char	**ft_split(const char *str, char c)
 		sp_strs[0] = NULL;
 		return (sp_strs);
 	}
-	count_word(str, c, &word_cnt);
+	word_cnt = count_word(str, c);
 	sp_strs = malloc(sizeof(char *) * (word_cnt + 1));
 	if (sp_strs == NULL)
 		return (NULL);
