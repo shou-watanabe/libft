@@ -96,6 +96,8 @@ char	**ft_split(const char *str, char c)
 	if (str[0] == '\0')
 	{
 		sp_strs = malloc(sizeof(char *));
+		if (sp_strs == NULL)
+			return (NULL);
 		sp_strs[0] = NULL;
 		return (sp_strs);
 	}
