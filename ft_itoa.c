@@ -34,24 +34,22 @@ static size_t	put_rec(long long nbr, char *str, int is_negative)
 	return (index + 1);
 }
 
-static size_t	calc_mem_size(int n)
+static size_t	calc_mem_size(long long	nbr)
 {
-	size_t		mem_size;
-	long long	num;
+	size_t	mem_size;
 
-	num = (long long)n;
 	mem_size = 1;
-	if (num < 0)
+	if (nbr < 0)
 	{
-		num *= -1;
+		nbr *= -1;
 		mem_size++;
 	}
-	if (num == 0)
+	if (nbr == 0)
 		return (mem_size + 1);
-	while (num > 0)
+	while (nbr > 0)
 	{
 		mem_size++;
-		num /= 10;
+		nbr /= 10;
 	}
 	return (mem_size);
 }
@@ -61,9 +59,10 @@ char	*ft_itoa(int n)
 	int			is_negative;
 	long long	nbr;
 	char		*s_nbr;
+	size_t		last_index;
 
 	nbr = (long long)n;
-	s_nbr = (char *)malloc(sizeof(char) * calc_mem_size(n));
+	s_nbr = (char *)malloc(sizeof(char) * calc_mem_size(nbr));
 	if (s_nbr == NULL)
 		return (NULL);
 	if (n < 0)
@@ -73,7 +72,8 @@ char	*ft_itoa(int n)
 	}
 	else
 		is_negative = 0;
-	s_nbr[put_rec(nbr, s_nbr, is_negative)] = '\0';
+	last_index = put_rec(nbr, s_nbr, is_negative);
+	s_nbr[last_index] = '\0';
 	return (s_nbr);
 }
 
