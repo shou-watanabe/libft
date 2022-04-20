@@ -19,7 +19,7 @@ static int	ft_isspace(int c)
 
 static int	over_num(bool is_positive_num)
 {
-	if (is_positive_num == 1)
+	if (is_positive_num)
 		return ((int)LONG_MAX);
 	else
 		return ((int)LONG_MIN);
