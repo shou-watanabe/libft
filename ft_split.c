@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/14 18:33:41 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:24:32 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,14 +97,14 @@ char	**ft_split(const char *str, char c)
 		return (NULL);
 	if (str[0] == '\0')
 	{
-		sp_strs = malloc(sizeof(char *));
+		sp_strs = (char **)malloc(sizeof(char *));
 		if (sp_strs == NULL)
 			return (NULL);
 		sp_strs[0] = NULL;
 		return (sp_strs);
 	}
 	word_cnt = count_word(str, c);
-	sp_strs = malloc(sizeof(char *) * (word_cnt + 1));
+	sp_strs = (char **)malloc(sizeof(char *) * (word_cnt + 1));
 	if (sp_strs == NULL)
 		return (NULL);
 	return (store_sp_str(sp_strs, str, c, 0));

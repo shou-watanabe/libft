@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 10:20:27 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 18:31:23 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:24:48 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		return (ft_strdup(s1));
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	new_str = malloc(sizeof(char) * (s1_len + s2_len + 1));
+	new_str = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
 	if (new_str == NULL)
 		return (NULL);
-	ft_strlcpy(new_str, s1, s1_len + 1);
+	ft_memmove(new_str, s1, s1_len + 1);
 	ft_strlcat(new_str, s2, s1_len + s2_len + 1);
 	return (new_str);
 }
