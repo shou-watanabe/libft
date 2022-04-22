@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 01:14:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/14 21:39:34 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:21:54 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,45 +52,3 @@ int	ft_atoi(const char *str)
 		num *= -1;
 	return ((int)num);
 }
-
-// int main(void)
-// {
-// 	puts("----ft_atoi------");
-//     char    str91[] = "-a-5";
-//     printf("zisaku  : %d\n", ft_atoi(str91));
-//     printf("library : %d\n", atoi(str91));
-//     char    str92[] = "-100";
-//     printf("zisaku  : %d\n", ft_atoi(str92));
-//     printf("library : %d\n", atoi(str92));
-//     char    str93[] = "1000321";
-//     printf("zisaku  : %d\n", ft_atoi(str93));
-//     printf("library : %d\n", atoi(str93));
-//     char    str94[] = "2147483648";
-//     printf("zisaku  : %d\n", ft_atoi(str94));
-//     printf("library : %d\n", atoi(str94));
-//     char    str95[] = "-2147483649";
-//     printf("zisaku  : %d\n", ft_atoi(str95));
-//     printf("library : %d\n", atoi(str95));
-//     char    str96[] = "100ab100";
-//     printf("zisaku  : %d\n", ft_atoi(str96));
-//     printf("library : %d\n", atoi(str96));
-//     char    str97[] = "\0";
-//     printf("zisaku  : %d\n", ft_atoi(str97));
-//     printf("library : %d\n", atoi(str97));
-//     char    str98[] = "111.11";
-//     printf("zisaku  : %d\n", ft_atoi(str98));
-//     printf("library : %d\n", atoi(str98));
-//     char    str99[] = "-2147483648";
-//     printf("zisaku  : %d\n", ft_atoi(str99));
-//     printf("library : %d\n", atoi(str99));
-//     char    str99_1[] = "2147483647";
-//     printf("zisaku  : %d\n", ft_atoi(str99_1));
-//     printf("library : %d\n", atoi(str99_1));
-//     char str99_2[] = "999999999";
-//     printf("zisaku  : %d\n", ft_atoi(str99_2));
-//     printf("library : %d\n", atoi(str99_2));
-// 	char str99_3[] = "9223372036854775808";
-//     printf("zisaku  : %d\n", ft_atoi(str99_3));
-//     printf("library : %d\n", atoi(str99_3));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 10:26:37 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/18 09:11:29 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:23:08 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ t_list	*ft_lstnew(void *content)
 	new_list->content = content;
 	return (new_list);
 }
-
-// int	main(void)
-// {
-// 	t_list	*new_list;
-
-// 	new_list = ft_lstnew("42");
-// 	printf("%s\n", (char *)new_list->content);
-// 	return (0);
-// }

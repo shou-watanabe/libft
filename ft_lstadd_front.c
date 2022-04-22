@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:38:07 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/18 09:11:19 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:22:42 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 	ft_lstadd_back(lst, tmp);
 }
-
-// int	main(void)
-// {
-// 	t_list	*new_list;
-
-// 	new_list = NULL;
-// 	ft_lstadd_front(&new_list, ft_lstnew(ft_strdup("Hello")));
-// 	ft_lstadd_front(&new_list, ft_lstnew(ft_strdup("World")));
-// 	printf("%s\n", (char *)new_list->content);
-// 	printf("%s\n", (char *)new_list->next->content);
-// 	return (0);
-// }

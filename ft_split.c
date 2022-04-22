@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/20 14:24:32 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:24:48 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,49 +109,3 @@ char	**ft_split(const char *str, char c)
 		return (NULL);
 	return (store_sp_str(sp_strs, str, c, 0));
 }
-
-// int main(void)
-// {
-// 	char **strs = ft_split("", 'a');
-
-// 	printf("%s\n", strs[0]);
-// 	printf("%s\n", strs[0]);
-// 	return (0);
-// }
-
-// int main(void)
-// {
-// 	char	*strs[] = {
-// 		"Hello,World,Good,Morning",
-// 		"Hello, World, Good, Morning",
-// 		"Hello.....World.....Good.....Morning",
-// 		"",
-// 		"Hello,World,Good,Morning,",
-// 		",,,Hello,World,,,,Good,Morning,,,",
-// 		"          "};
-// 	char	seps[] = {',', ' ', '.', 'G', '\0'};
-// 	for (int i = 0; i < 5; i++)
-// 	{
-// 		char	sep = seps[i];
-// 		for (int j = 0; j < 7 ; j++)
-// 		{
-// 			char	*str = strs[j];
-// 			char	**arr = ft_split(str, sep);
-// 			printf("ft_split(\"%s\", \"%c\")	:%p\n", str, sep, arr);
-// 			if (arr == NULL)
-// 				continue ;
-// 			int	k = 0;
-// 			printf("{");
-// 			while (arr[k])
-// 			{
-// 				if (k > 0)
-// 					printf(", ");
-// 				printf("\"%s\"", arr[k]);
-// 				k++;
-// 			}
-// 			printf("}, size = %i\n\n", k);
-// 			if (arr)
-// 				free(arr);
-// 		}
-// 	}
-// }

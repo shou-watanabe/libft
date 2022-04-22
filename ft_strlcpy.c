@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 10:37:44 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 01:40:46 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:25:09 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	dest[i] = '\0';
 	return (srclen);
 }
-
-// int main(void)
-// {
-// 	puts("----ft_strlcpy------");
-//     char str101[] ="1234567";
-//     char str102[] ="1234567";
-//     char str103[] = "ABCDEFG";
-//     printf("zisaku  : %zu, %s\n", ft_strlcpy(str101,str103, 0), str101);
-//     printf("library : %zu, %s\n", strlcpy(str102,str103, 0), str102);
-//     printf("zisaku  : %zu, %s\n", ft_strlcpy(str101,str103, 3), str101);
-//     printf("library : %zu, %s\n", strlcpy(str102,str103, 3), str102);
-// 	return (0);
-// }

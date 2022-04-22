@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 18:36:06 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/10 09:26:17 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:22:34 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,11 +76,3 @@ char	*ft_itoa(int n)
 	s_nbr[last_index] = '\0';
 	return (s_nbr);
 }
-
-// int main(void)
-// {
-// 	printf("%s\n", ft_itoa(INT_MAX));
-// 	printf("%s\n", ft_itoa(INT_MIN));
-// 	printf("%s\n", ft_itoa(0));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 16:25:34 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 18:00:25 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:24:20 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 			dst_p[size] = src_p[size];
 	return (dst_p);
 }
-
-// int main(void)
-// {
-// 	printf("%s\n", (char *)memmove("Hello", NULL, 0));
-// 	char str31[] = "abcdefghijklmnopqrstu";
-// 	char str32[] = "abcdefghijklmnopqrstu";
-//     ft_memmove(str31 + 5, str31, 10);
-//     memmove(str32 + 5, str32, 10);
-//     printf("zisaku  : %s\n", str31);
-//     printf("library : %s\n", str32);
-
-// 	return (0);
-// }

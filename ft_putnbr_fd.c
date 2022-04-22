@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 23:55:20 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 11:02:59 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:24:38 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((n + '0'), fd);
 }
-
-// int main(void)
-// {
-// 	ft_putnbr_fd(INT_MAX, 1);
-// 	ft_putnbr_fd(INT_MIN, 1);
-// 	ft_putnbr_fd(0, 1);
-// 	return (0);
-// }

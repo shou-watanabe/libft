@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 15:24:07 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/20 17:58:39 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:23:03 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,29 +40,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (updated_lst);
 }
-
-// void *addOne(void * p)
-// {
-// 	void *r = malloc(sizeof(int));
-// 	*(int*)r = *(int*)p + 1;
-// 	return (r);
-// }
-
-// int main(void)
-// {
-// 	t_list	*new_list;
-// 	t_list *updated_lst;
-
-// 	new_list = NULL;
-// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("0")));
-// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("2")));
-// 	ft_lstadd_back(&new_list, ft_lstnew(ft_strdup("4")));
-// 	updated_lst = ft_lstmap(new_list, &addOne, free);
-// 	while (updated_lst != NULL)
-// 	{
-// 		printf("%s\n", (char *)updated_lst->content);
-// 		updated_lst = updated_lst->next;
-// 	}
-
-// 	return (0);
-// }

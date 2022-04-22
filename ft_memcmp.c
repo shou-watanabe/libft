@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 00:14:00 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/12 18:39:58 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:23:22 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t size)
 	}
 	return (diff);
 }
-
-// int main(void)
-// {
-// 	// これはcrush
-// 	// s1かs2がNULLかつsizeが0でなければcrushする
-// 	// printf("%d\n", memcmp(NULL, NULL, 0));
-// 	// この場合はcrushしない
-// 	printf("%d\n", memcmp(NULL, NULL, 0));
-// 	printf("%d\n", ft_memcmp("aaa", "aba", 3));
-// 	return (0);
-// }
