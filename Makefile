@@ -9,19 +9,23 @@ FILES	= ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 		   ft_strjoin.c ft_strtrim.c ft_split.c \
 		   ft_itoa.c ft_strmapi.c ft_striteri.c \
 		   ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-		   ft_putnbr_fd.c
-BONUS	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
+		   ft_putnbr_fd.c \
+		   ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 		   ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 		   ft_lstclear.c ft_lstiter.c ft_lstmap.c
-OBJS	= $(FILES:.c=.o)
-BOBJS	= $(BONUS:.c=.o)
+SRCS	= $(addprefix $(SRCDIR)/, $(FILES))
+OBJS	= $(addprefix $(OBJDIR)/, $(FILES:.c=.o))
+LIBDIR	:= lib
+SRCDIR	:= srcs
+OBJDIR	:= objs
 CC		= cc
-NAME	= libft.a
+NAME	= $(LIBDIR)/libft.a
+INCDIR	:= includes
 CFLAGS	= -Wall -Wextra -Werror
 RM		= rm -rf
 AR		= ar rc
 
-all: $(NAME)
+all: $(LIBDIR) $(OBJDIR) $(NAME)
 
 ifdef WITH_BONUS
   OBJS += $(BOBJS)
@@ -33,11 +37,20 @@ bonus:
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
+$(OBJDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) $(CFLAGS) -I $(INCDIR) -c $< -o $@
+
+$(LIBDIR):
+	mkdir -p $@
+
+$(OBJDIR):
+	mkdir -p $@
+
 clean:
-	$(RM) $(OBJS) $(BOBJS)
+	$(RM) $(OBJDIR)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(LIBDIR)
 
 re: fclean all
 
