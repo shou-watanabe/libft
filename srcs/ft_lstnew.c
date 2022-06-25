@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 10:26:37 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/22 17:23:08 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/06/25 21:27:17 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ t_list	*ft_lstnew(void *content)
 	if (new_list == NULL)
 		return (NULL);
 	new_list->next = NULL;
+	new_list->prev = NULL;
 	new_list->content = content;
 	return (new_list);
 }
