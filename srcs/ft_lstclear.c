@@ -6,7 +6,7 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:58:32 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/22 17:22:46 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/06/27 14:59:40 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*clear_target_lst;
 	t_list	*next_lst;
 
-	if (lst == NULL || del == NULL)
+	if (lst == NULL)
 		return ;
 	clear_target_lst = *lst;
 	while (clear_target_lst != NULL)
