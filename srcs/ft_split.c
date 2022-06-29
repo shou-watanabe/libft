@@ -6,13 +6,13 @@
 /*   By: shwatana <shwatana@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:22:17 by shwatana          #+#    #+#             */
-/*   Updated: 2022/04/22 17:24:48 by shwatana         ###   ########.fr       */
+/*   Updated: 2022/06/28 19:27:51 by shwatana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	*free_all(char	**arr)
+void	*free_all(char **arr)
 {
 	size_t	i;
 
